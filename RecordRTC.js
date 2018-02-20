@@ -3888,7 +3888,7 @@ var Whammy = (function() {
      * @param {number} duration - Stick a duration (in milliseconds)
      */
     WhammyVideo.prototype.add = function(frame, duration) {
-        if ('canvas' in frame) { //CanvasRenderingContext2D
+        if (frame.canvas) { //CanvasRenderingContext2D
             frame = frame.canvas;
         }
 
